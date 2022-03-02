@@ -6,20 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Giovani Pereira</title>
-    <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computador-desktop-icon-computer.png">
+    <link rel="icon" type="image/png"
+        href="https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computador-desktop-icon-computer.png">
 </head>
 
 <body>
-    <h1>Portifólio Giovani Pereira</h1>
-    <nav>
-        <ul>
-            <li><a href="#quemsou">Quem sou</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="https://www.linkedin.com/in/giovani-pereira-dev/" target="_blank">LinkedIN</a></li>
-        </ul>
-    </nav>
+    <div id="header">
 
-    <img src="WhatsApp Image 2022-02-15 at 20.11.07.jpeg" width="250px" alt="pessoa sorrindo">
+        <header>
+            <h1 class="titulo-pagina">Portifólio Giovani Pereira</h1><br>
+
+
+            <img class="imagem-perfil" src="WhatsApp Image 2022-03-02 at 14.57.12.jpeg" width="250px"
+                alt="pessoa sorrindo">
+        </header>
+    </div><br>
+    <nav>
+        <div id="quemsou-hab">
+
+            <a href="#quemsou">Quem sou</a>
+            <a class="habilidades" href="#habilidades">Habilidades</a>
+            <a class="contato" href="#contato">Contato</a>
+        </div>
+        <div id="logo-redeSocial">
+            <a href="https://www.linkedin.com/in/giovani-pereira-dev/" target="_blank"><img
+                    src="logo-linkedin-icon-256.png" width="35px" alt="logo Linkedin"></a>
+            <a href="https://github.com/Giovani-devp" target="_blank"><img src="github-136-458293.png" width="35px"
+                    alt="logo GitHub"></a>
+        </div>
+    </nav>
+    <br>
+    <hr size="0" width="100%">
+    <br>
 
     <h2 id="quemsou"><strong>Quem sou</strong></a></h2><br><br>
 
@@ -27,7 +45,7 @@
         Tenho 26 anos e estou no começo de uma longa jornada nos estudos de programação. Faço
         parte de uma escola chamada <a href="https://www.betrybe.com/" target="_blank">Trybe</a> e estou começando a
         desenvolver algumas
-        hard skills para ir trabalhando no desenvolvimento desse portifólio. </p><br><br>
+        hard skills para ir trabalhando no desenvolvimento desse portifólio. </p><br><br><br>
 
     <h2 id="habilidades"><strong> Minhas habilidades</strong></h2><br><br>
 
@@ -35,9 +53,23 @@
         pouco de experiencia que eu tenho
         foi através da plataforma <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a></p><br>
 
-        <footer>
-            <p><u>Página em desenvolvimento.</u></p>
-        </footer>
+    <h2 id="contato"><strong>Contato</strong></h2><br>
+    <div id="div-form">
+        <form action="giovanips.dev@gmail.com">
+            <input type="text" placeholder="Digite seu nome" required>
+            <p></p>
+            <input type="email" placeholder="Digite seu email" required><br>
+            <label for="story"></label><br>
+
+            <textarea id="story" name="story" rows="5" cols="33" placeholder="Digite uma mensagem :)">
+    </textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p><u>Página em desenvolvimento.</u></p>
+    </footer>
 
 
 </body>
@@ -48,7 +80,7 @@
     /*Seletor de tag */
 
     body {
-        background-color: #cbd4db;
+        background-color: #f6ecf5;
         text-align: center;
 
     }
@@ -70,14 +102,66 @@
     }
 
     a:hover {
-        background-color: #00372b;
-        color: #cbd4db;
-        font-size: 18px;
+
+        color: #00372b;
+        font-size: 30px;
+
+    }
+
+    a {
         text-decoration: none;
+        font-family: monospace;
     }
 
-    img {
-        border-radius: 20%;
+    nav {
+        max-width: 100%;
+        height: auto;
     }
 
+    /*SELETOR CLASS*/
+
+    .imagem-perfil {
+        border-radius: 50%;
+
+    }
+
+    .titulo-pagina {
+        color: #f6ecf5;
+    }
+
+    .habilidades {
+        margin-left: 35px;
+    }
+
+    .contato {
+        position: absolute;
+        margin-left: 35px;
+    }
+
+    #header {
+        background-image: url("https://thumbs.dreamstime.com/b/c%C3%B3digo-bin%C3%A1rio-de-computador-tecnologia-digital-transfer%C3%AAncia-informa%C3%A7%C3%B5es-dados-padr%C3%A3o-vetorial-moderno-conjunto-secretas-159372913.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #quemsou-hab {
+        margin-right: 1000px;
+        font-size: 18px;
+    }
+
+    #logo-redeSocial {
+        position: absolute;
+        margin-left: 1200px;
+        top: 350px;
+    }
+
+    #div-form{
+        background-color: #dfd7de;
+        background-image: url("https://www.embarcados.com.br/wp-content/uploads/2016/06/sistemas-de-numera%C3%A7%C3%A3o-850x510.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size:cover;
+        border-radius: 50px;
+
+    }
 </style>
