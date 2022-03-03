@@ -1,0 +1,94 @@
+    /*Seletor de tag */
+    body {
+        background-color: #e2d9e1;
+        text-align: center;
+
+
+    }
+
+    h1 {
+        color: #00372b;
+        font-family: monospace;
+    }
+
+    h2 {
+        font-family: monospace;
+        font-size: 29px;
+    }
+
+    p {
+        color: #00372b;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        
+    }
+
+    a:hover {
+
+        color: #00372b;
+        font-size: 30px;
+
+    }
+
+    a {
+        font-family: monospace;
+        color: #00372b;
+    }
+
+    nav {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a:active {
+        color: #02107c;
+    }
+
+    /*SELETOR CLASS*/
+
+    .imagem-perfil {
+        border-radius: 50%;
+
+    }
+
+    .titulo-pagina {
+        color: #00372b;
+        font-family: sans-serif;
+    }
+
+    .habilidades {
+        margin-left: 35px;
+    }
+
+    .contato {
+        position: absolute;
+        margin-left: 35px;
+    }
+
+    #header {
+        background-image: url("https://cdn-icons-png.flaticon.com/512/87/87106.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #quemsou-hab {
+        margin-right: 1000px;
+        font-size: 18px;
+    }
+
+    #logo-redeSocial {
+        position: absolute;
+        margin-left: 1200px;
+        top: 350px;
+    }
+
+    #div-form {
+        background-image: url("https://w7.pngwing.com/pngs/284/123/png-transparent-binary-code-binary-number-symbol-binary-file-symbol-miscellaneous-white-text.png://cdn-icons-png.flaticon.com/512/87/87106.png");
+        border-radius: 50px;
+        background-color: #d6cfd5;
+
+    }
